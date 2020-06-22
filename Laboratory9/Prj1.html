@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex3e</title>
+    </head>
+<body>
+    <form>
+        <button type="button" onclick="
+        i=1;
+        d1 = new Date(2019, 0, i);
+        d2 = new Date(2019, 11, 31);
+        var array = new Array;
+        while ((d1.getDate() != d2.getDate()) || (d1.getMonth() != d2.getMonth())){
+            z = d1.getDate();
+            d1.setDate(z+i);
+            if (d1.getDay() == 3){
+                document.write(d1.getDate()+'/'+(d1.getMonth()+1)+'/'+ d1.getFullYear()+'<br>');
+            }
+        }
+        ">button</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex16p53</title>
+    </head>
+    <body>
+        <form>
+            Introduceti elementele array:<input type="text" name="c1">
+            <button type="button" onclick="
+               var textnum = c1.value;
+               var len = textnum.length;
+               var array = new Array;
+               var c = 0;
+               for (var i=0;i<len;i++){
+                   if (textnum[i]!=' '){
+                       array[c] = parseInt(textnum[i]);
+                       c++;
+                   }
+               }
+               var countpar = 0;
+               var countimp = 0;
+               var par = 0;
+               var impar = 0;
+               for (var i=1;i<=array.length;i++){
+                   if (i%2==0){
+                       par += array[i-1];
+                       countpar++;
+                   }
+                   else {
+                       impar += array[i-1];
+                       countimp++;
+                   }
+               }
+               var rspar = par/countpar;
+               var rsimp = impar/countimp;
+               alert('pare: '+rspar+'impare:'+rsimp);
+            ">Calculeaza</button>
+        </form>
+    </body>
+</html>

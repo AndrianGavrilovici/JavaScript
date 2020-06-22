@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ex1</title>
+</head>
+<body>
+    <h2 id="text"></h2>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var i;
+            for (i = 11; i < 35; i++) {
+                document.getElementById("text").append(i * i);
+                if (i < 34) document.getElementById("text").append(", ");
+            }
+        });
+    </script>
+</body>
+</html>

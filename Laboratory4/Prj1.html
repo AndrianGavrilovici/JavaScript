@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex1</title>
+</head>
+<body>
+    <form>
+        <h2>Introduceti primul numar:</h2>
+            <input type="text" id="num1">
+            <h2>Introduceti al doilea numar:</h2>
+        <input type="text" id="num2">
+        <input type="button" value="Ok"
+        onclick="maxim()">
+    </form>
+    <h2>Numarul cel mai mare este: </h2>
+    <h2 id="Maximal"></h2>
+    <script>
+        function maxim() {
+            var a = parseInt(num1.value);
+            var b = parseInt(num2.value);
+            if (a > b) document.getElementById('Maximal').innerText=a
+            else document.getElementById('Maximal').innerText=b;
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex2p59</title>
+    </head>
+    <body>
+        <form>
+            Introduceti m:<input type="text" name="c1">
+            Introduceti n:<input type="text" name="c2">
+            <button type="button" onclick="
+               var m = c1.value;
+               var n = c2.value;
+               var a = new Array;
+               for (var i=0;i<m;i++){
+                   for (var j=0;j<n;j++){
+                       a[i, j] = prompt('a['+(i+1)+','+(j+1)+']');
+                   }
+               }
+               var min = a[0, 0];
+               for (var i=0;i<m;i++){
+                   for (var j=0;j<n;j++){
+                       if (a[i, j] < min) {
+                           min = a[i, j];
+                       }
+                   }
+               }
+               alert('min: '+min);
+               for (var i=0;i<m;i++){
+                   for (var j=0;j<n;j++){
+                       if (a[i, j] == min) {
+                           alert('pozitia: '+(i+1)+', '+(j+1));
+                       }
+                   }
+               }
+            ">Calculeaza</button>
+        </form>
+    </body>
+</html>

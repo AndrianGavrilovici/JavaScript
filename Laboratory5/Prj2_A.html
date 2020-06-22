@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ex8p35</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="firstNum">
+        <input type="text" id="secNum">
+        <input type="button" value="Calculare"
+            onclick="DivAndMult()">
+    </form>
+    <h2 id="cmmdc"></h2>
+    <h2 id="cmmmc"></h2>
+    <script>
+        function DivAndMult() {
+            var a = parseInt(firstNum.value);
+            var b = parseInt(secNum.value);
+            var x = parseInt(firstNum.value);
+            var y = parseInt(secNum.value);
+            while(a != b)
+            {
+                if(a > b)
+                    a = a - b
+                else
+                    b = b - a;
+            }
+            while(x!=y)
+            {
+                if(x>y)
+                    x=x-y;
+                else
+                    y=y-x;
+            }
+            document.getElementById("cmmdc").innerText = "Cel mai mare divizor comun:  " + a;
+            document.getElementById("cmmmc").innerText= "Cel mai mic multiplu comun:  " + (firstNum.value*secNum.value)/x;
+        }
+    </script>
+</body>
+</html>

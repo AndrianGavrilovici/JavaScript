@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Prj1</title>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" id="text"
+            onselect="document.bgColor='white'"
+            onmouseout="document.bgColor=value">
+            <input type="button" value="Rosu" 
+            onclick="BackgroundColor('red')">
+            <input type="button" value="Verde" 
+            onclick="BackgroundColor('green')">
+            <input type="button" value="Albastru" 
+            onclick="BackgroundColor('blue')">
+           
+        </form>
+        <script>
+            function BackgroundColor(color) {
+                document.bgColor=color;
+                document.getElementById('text').value=color;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ex1p75</title>
+</head>
+<body>
+    <form>
+        <input type="text" value="mama are pere" id="inputText">
+        <input type="button" value="OK"
+            onclick="func()"
+        >
+    </form>
+    <h2 id="afisare"></h2>
+    <script>
+        function func() {
+            var i = 1;
+            var s = inputText.value;
+            while (i < s.length) {
+                document.getElementById("afisare").append(s[i] + " ");
+                i = i + 2;
+            }
+        }
+    </script>
+</body>
+</html>

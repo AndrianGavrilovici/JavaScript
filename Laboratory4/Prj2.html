@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex2</title>
+</head>
+<body>
+    <h2>Introduceti a:</h2>
+    <form>
+            <input type="text" id="num1">
+            <h2>Introduceti b:</h2>
+        <input type="text" id="num2">
+        <input type="button" value="Ok"
+        onclick="divide()">
+    </form>
+    <h2 id="textDivide"></h2>
+    <script>
+        function divide() {
+            var a = parseInt(num1.value);
+            var b = parseInt(num2.value); 
+            var rs = (b % a == 0) ? b + " divide la " + a:b + " nu divide la " + a;
+            document.getElementById('textDivide').innerText=rs;
+            if (b > a) document.getElementById('textDivide').innerText=b + " este mai mare decat " + a;
+        }
+    </script>
+</body>
+
+</html>

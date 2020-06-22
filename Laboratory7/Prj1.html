@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex1p45</title>
+    </head>
+    <body>
+        <form>
+            Introduceti elementele array:<input type="text" name="c1">
+            <button type="button" onclick="
+               var textnum = c1.value;
+               var len = textnum.length;
+               var c = 0;
+               for (var i=0;i<len;i++){
+                   if (parseInt(textnum[i]) == 0){
+                       c++;
+                   }
+               }
+               alert('numarul de componente nule: '+c);
+            ">Calculeaza</button>
+        </form>
+    </body>
+</html>

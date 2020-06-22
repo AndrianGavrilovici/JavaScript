@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex19p81</title>
+    </head>
+    <body>
+        <form>
+        Textul x<input type="text" name="c1" value="Informatica este frumoasa" size="30"> <br>
+        Textul y<input type="text" name="c2" value="este frumoasa" size="30">
+        <input type="button" value="Cauta"
+        onClick="s=c1.value;
+                 var p=s.indexOf(c2.value);
+                 if (p > -1)
+                    alert(p);
+                 else alert('textul y nu este in textul x');
+                    ">
+        </form>
+    </body>
+</html>

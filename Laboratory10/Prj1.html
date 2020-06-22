@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex6</title>
+    </head>
+    <body id="background">
+        <form>
+            <p>Paragraf1</p>
+            <p>Paragraf2</p>
+            <p>Paragraf3</p>
+            <button type="button" onclick="setBgColor()">Culoare-fondal</button>
+            <button type="button" onclick="setImage()">Imagine-fondal</button>
+            <button type="button" onclick="setColor()">Culoare-text</button>
+        </form>
+        <script type="text/javascript">
+            function getRandomColor() {
+              var letters = '0123456789ABCDEF';
+              var color = '#';
+              for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+              }
+              return color;
+            }
+            function setBgColor() {
+                document.body.style.background = getRandomColor();
+            }
+            function setColor() {
+                document.body.style.color = getRandomColor();
+            }
+            function setImage() {
+                var rn = Math.floor((Math.random() * 3) + 1);
+                var img = new Image();
+                if (rn == 1)
+                    document.getElementById("background").style.background = "url('1.jpg')";
+                else if (rn == 2)
+                    document.getElementById("background").style.background = "url('2.jpg')";
+                else
+                document.getElementById("background").style.background = "url('3.jpg')";    
+            }
+        </script>
+    </body>
+</html>

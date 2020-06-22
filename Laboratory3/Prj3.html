@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prj3</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="num1">
+        <button style="width:25px;height:25px;"
+        value="+" onclick="Calculator(value)"
+        >+</button>
+        <button style="width:25px;height:25px;"
+        value="-" onclick="Calculator(value)"
+        >-</button>
+        <br>
+        <input type="text" id="num2">
+        <button style="width:25px;height:25px;"
+        value="*" onclick="Calculator(value)"
+        >*</button>
+        <button style="width:25px;height:25px;"
+        value="/" onclick="Calculator(value)"
+        >/</button>
+    </form>
+    <script>
+        function Calculator(op) {
+            var n1 = parseInt(num1.value);
+            var n2 = parseInt(num2.value);
+            var s;
+            if(op == '+') s = n1 + n2;
+            else if(op == '-') s = n1 - n2;
+            else if(op == '*') s = n1 * n2;
+            else s = n1 / n2;
+            alert(s);
+        }
+    </script>
+</body>
+</html>

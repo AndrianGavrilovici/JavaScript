@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ex25p15</title>
+</head>
+<body>
+<form>
+Metri: <input type="text" name="metri" value="265">
+<input type="button" value="Transformare"
+onclick="n=parseInt(metri.value);
+         centimetri.value = n*100;">
+<br>
+Centimetri:<input type="text" name="centimetri">
+<br><br>
+Kilograme: <input type="text" name="kilograme" value="15">
+<input type="button" value="Transformare"
+     onclick="n=parseInt(kilograme.value);
+            miligrame.value=n*10000;">
+<br>
+Miligrame: <input type="text" name="miligrame">
+<br><br>
+Kilograme: <input type="text" name="kg" value="6520">
+<input type="button" value="Transformare"
+       onclick="n=parseInt(kg.value);
+                tone.value=(n-(n%1000))/1000;">
+<br>
+Tone: <input type="text" name="tone">
+<br><br>
+<input type="text" name="ani" value="21">
+<input type="button" value="Transformare" "
+    onclick="n=parseInt(ani.value);
+        l=n*12;
+        s=l*4;
+        z=s*7;
+        luni.value=l;
+        saptamani.value=s;
+        zile.value=z;
+    ">
+<br>
+Luni: <input type="text" name="luni"><br>
+Saptamani: <input type="text" name="saptamani"><br>
+Zile: <input type="text" name="zile"><br>
+</form>
+</body>
+</html>

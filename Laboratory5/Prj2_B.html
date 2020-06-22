@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ex8p35</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="primNum" name="primNum">
+        <input type="text" id="twoNum" name="twoNum">
+        <input type="text" id="threeNum" name="threeNum">
+        <input type="button" value="Calculare" onclick="DivAndMult(primNum.value, twoNum.value)">
+    </form>
+    <h2 id="cmmdc"></h2>
+    <h2 id="cmmmc"></h2>
+    <script>
+        function Cmmdc(a, b) {
+            alert(Cmmdc(Cmmdc(a, b), threeNum.value));
+        }
+    </script>
+</body>
+
+</html>
